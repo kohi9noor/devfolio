@@ -1,27 +1,27 @@
-import React from 'react';
+import React from "react";
 // eslint-disable-next-line camelcase
-import { Inter, Space_Grotesk } from 'next/font/google';
-import type { Metadata } from 'next';
-import { ClerkProvider } from '@clerk/nextjs';
+import { Inter, Space_Grotesk } from "next/font/google";
+import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
 
-import './globals.css';
+import "./globals.css";
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-inter',
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
 });
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-spaceGrotesk',
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-spaceGrotesk",
 });
 
 export const metadata: Metadata = {
-  title: 'DevFlow',
+  title: "DevFlow",
   description:
-    'Discover a world of knowledge and expertise at our online community. Join us for answers, discussions, and insights on everything from coding conundrums to technology trends. Unlock the power of collective wisdom at DevFlow',
+    "Discover a world of knowledge and expertise at our online community. Join us for answers, discussions, and insights on everything from coding conundrums to technology trends. Unlock the power of collective wisdom at DevFlow",
 };
 
 export default function RootLayout({
@@ -30,13 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <ClerkProvider
         appearance={{
           elements: {
-            formButtonPrimary: 'primary-gradient',
+            formButtonPrimary: "primary-gradient",
             footerActionLink:
-              'primary-text-gradient font-semibold tracking-wide hover:text-black',
+              "primary-text-gradient font-semibold tracking-wide hover:text-black",
           },
         }}
       >
